@@ -1,0 +1,1060 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.6, pytest-8.3.5, pluggy-1.5.0
+rootdir: C:\Users\Redmi\Desktop\НИР\Мутации\str_WT
+collected 34 items
+
+test_json.py FF.FF.........s....FF.FFF.FFF.FF.F                          [100%]
+
+================================== FAILURES ===================================
+____________________ test_jsons_match[1BJ1_HL_VW_WT.json] _____________________
+
+pair = ('1BJ1_HL_VW_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1BJ1_HL_VW_WT', 'sequences': [{'protein':...IKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 1BJ1_HL_VW_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "1BJ1_HL_VW_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGYTFTNYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKRRFTFSLDTSKSTAYLQMNSLRAEDTAVYYCAKYPHYYGSSHWYFDVWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHT"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DIQMTQSPSSLSASVGDRVTITCSASQDISNYLNWYQQKPGKAPKVLIYFTSSLHSGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQQYSTVPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "1BJ1_HL_VW_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGYTFTNYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKRRFTFSLDTSKSTAYLQMNSLRAEDTAVYYCAKYPHYYGSSHWYFDVWGQGTLVTVSSASTKGPSVFPLAPSGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DIQMTQSPSSLSASVGDRVTITCSASQDISNYLNWYQQKPGKAPKVLIYFTSSLHSGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQQYSTVPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...RGEC'}}], ...} == {'dialect': '...NRGE'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'EVQLVESGGGLVQPGGSLRLSCAASGYTFTNYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKR...GTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'EVQLVESGGGLVQPGGSLRLSCAASGYTFTNYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKR...QGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+____________________ test_jsons_match[1CZ8_HL_VW_WT.json] _____________________
+
+pair = ('1CZ8_HL_VW_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1CZ8_HL_VW_WT', 'sequences': [{'protein':...IKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 1CZ8_HL_VW_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "1CZ8_HL_VW_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGYDFTHYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKRRFTFSLDTSKSTAYLQMNSLRAEDTAVYYCAKYPYYYGTSHWYFDVWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHL"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DIQLTQSPSSLSASVGDRVTITCSASQDISNYLNWYQQKPGKAPKVLIYFTSSLHSGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQQYSTVPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "1CZ8_HL_VW_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGYDFTHYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKRRFTFSLDTSKSTAYLQMNSLRAEDTAVYYCAKYPYYYGTSHWYFDVWGQGTLVTVSSASTKGPSVFPLAPSGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DIQLTQSPSSLSASVGDRVTITCSASQDISNYLNWYQQKPGKAPKVLIYFTSSLHSGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQQYSTVPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...RGEC'}}], ...} == {'dialect': '...NRGE'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'EVQLVESGGGLVQPGGSLRLSCAASGYDFTHYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKR...GTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'EVQLVESGGGLVQPGGSLRLSCAASGYDFTHYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKR...QGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+____________________ test_jsons_match[1DVF_AB_CD_WT.json] _____________________
+
+pair = ('1DVF_AB_CD_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1DVF_AB_CD_WT', 'sequences': [{'protein':...'DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 1DVF_AB_CD_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "1DVF_AB_CD_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLQESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSRLSISKDNSKSQVFLKMNSLHTDDTARYYCARERDYRLDYWGQGTTLTVSS"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIKR"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "1DVF_AB_CD_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLQESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSRLSISKDNSKSQVFLKMNSLHTDDTARYYCARERDYRLDYWGQGTTLTVSS"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...EIKR'}}], ...} == {'dialect': '...LEIK'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLQESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSR...ce': 'DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIKR'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLQESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSR...nce': 'DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[1JRH_LH_I_WT.json] _____________________
+
+pair = ('1JRH_LH_I_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1JRH_LH_I_WT', 'sequences': [{'protein': {...SRFSGSGSGKDYTLSITSLQTEDVATYYCQQYWSTWTFGGGTKLEIKRADAAPTVSIFPCFLNNFYPKDINVKGVLNSWTDQDSKDSTYSMSSTCEATHKTSTSPIVK'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 1JRH_LH_I_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "1JRH_LH_I_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "AVKLQESGPGILKPSQTLSLTCSFSGFSLTTYGMGVGWIRQSSGKGLEWLAHIWWDDDKYYNPSLKSRLTISKDTSRNQVFLKITSVATADTATYYCARRAPFYGNHAMDYWGQGTTVTVSSAKTTPPSVYPLAPGSAAQTNSMVTLGCLVKGYFPEPVTVTWNSGSLSSGVHTFPAVLQSDLYTLSSSVTVPSSPRPSETVTCNVAHPASSTKVDKKI"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "SVEMTQSPSSFSVSLGDRVTITCKASEDIYNRLAWYQQKPGNAPRLLISGATSLETEVPSRFSGSGSGKDYTLSITSLQTEDVATYYCQQYWSTWTFGGGTKLEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "1JRH_LH_I_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "AVKLQESGPGILKPSQTLSLTCSFSGFSLTTYGMGVGWIRQSSGKGLEWLAHIWWDDDKYYNPSLKSRLTISKDTSRNQVFLKITSVATADTATYYCARRAPFYGNHAMDYWGQGTTVTVSSAKTTPCLVYFPEPVTVTWNSGSSGVHTFPAVLQSDLYTLSSSVTCNVAHPASSTKVDK"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "SVEMTQSPSSFSVSLGDRVTITCKASEDIYNRLAWYQQKPGNAPRLLISGATSLETEVPSRFSGSGSGKDYTLSITSLQTEDVATYYCQQYWSTWTFGGGTKLEIKRADAAPTVSIFPCFLNNFYPKDINVKGVLNSWTDQDSKDSTYSMSSTCEATHKTSTSPIVK"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...RNEC'}}], ...} == {'dialect': '...PIVK'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'AVKLQESGPGILKPSQTLSLTCSFSGFSLTTYGMGVGWIRQSSGKGLEWLAHIWWDDDKYYNPSLK...GTKLEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'AVKLQESGPGILKPSQTLSLTCSFSGFSLTTYGMGVGWIRQSSGKGLEWLAHIWWDDDKYYNPSLK...LETEVPSRFSGSGSGKDYTLSITSLQTEDVATYYCQQYWSTWTFGGGTKLEIKRADAAPTVSIFPCFLNNFYPKDINVKGVLNSWTDQDSKDSTYSMSSTCEATHKTSTSPIVK'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[1YY9_CD_A_WT.json] _____________________
+
+pair = ('1YY9_CD_A_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1YY9_CD_A_WT', 'sequences': [{'protein': {...LELKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNR'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 1YY9_CD_A_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "1YY9_CD_A_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLKQSGPGLVQPSQSLSITCTVSGFSLTNYGVHWVRQSPGKGLEWLGVIWSGGNTDYNTPFTSRLSINKDNSKSQVFFKMNSLQSNDTAIYYCARALTYYDYEFAYWGQGTLVTVSAASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKRVEPKS"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DILLTQSPVILSVSPGERVSFSCRASQSIGTNIHWYQQRTNGSPRLLIKYASESISGIPSRFSGSGSGTDFTLSINSVESEDIADYYCQQNNNWPTTFGAGTKLELKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGA"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "1YY9_CD_A_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLKQSGPGLVQPSQSLSITCTVSGFSLTNYGVHWVRQSPGKGLEWLGVIWSGGNTDYNTPFTSRLSINKDNSKSQVFFKMNSLQSNDTAIYYCARALTYYDYEFAYWGQGTLVTVSAASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKRVEPK"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DILLTQSPVILSVSPGERVSFSCRASQSIGTNIHWYQQRTNGSPRLLIKYASESISGIPSRFSGSGSGTDFTLSINSVESEDIADYYCQQNNNWPTTFGAGTKLELKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNR"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...NRGA'}}], ...} == {'dialect': '...SFNR'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLKQSGPGLVQPSQSLSITCTVSGFSLTNYGVHWVRQSPGKGLEWLGVIWSGGNTDYNTPFTSR...AGTKLELKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGA'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLKQSGPGLVQPSQSLSITCTVSGFSLTNYGVHWVRQSPGKGLEWLGVIWSGGNTDYNTPFTSR...FGAGTKLELKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNR'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[2B2X_HL_A_WT.json] _____________________
+
+pair = ('2B2X_HL_A_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '2B2X_HL_A_WT', 'sequences': [{'protein': {...VEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNR'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 2B2X_HL_A_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "2B2X_HL_A_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGFTFSRYTMSWVRQAPGKGLEWVAVISGGGHTYYLDSVEGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCTRGFGDGGYFDVWGQGTLVTVSSAKTTPPSVYPLAPGSAAQTNSMVTLGCLVKGYFPEPVTVTWNSGSLSSGVHTFPAVLQSDLYTLSSSVTVPSSTWPSETVTCNVAHPASSTKVDKKIVPRDCHHHHHH"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "QIQLTQSPSSLSASVGDRVTITCSASSQVNHMFWYQQKPGKAPKPWIYLTSYLASGVPSRFSGSGSGTDYTLTISSLQPEDFATYYCQQWSGNPWTFGQGTKVEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "2B2X_HL_A_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGFTFSRYTMSWVRQAPGKGLEWVAVISGGGHTYYLDSVEGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCTRGFGDGGYFDVWGQGTLVTVSSAKTTPPSVYPLAPSMVTLGCLVKGYFPEPVTVTWNSGSLSSGVHTFPAVLQSDLYTLSSSVTVPSSTWPSETVTCNVAHPASSTKVDKKIVP"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "QIQLTQSPSSLSASVGDRVTITCSASSQVNHMFWYQQKPGKAPKPWIYLTSYLASGVPSRFSGSGSGTDYTLTISSLQPEDFATYYCQQWSGNPWTFGQGTKVEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNR"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...RNEC'}}], ...} == {'dialect': '...SFNR'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'EVQLVESGGGLVQPGGSLRLSCAASGFTFSRYTMSWVRQAPGKGLEWVAVISGGGHTYYLDSVEGR...GTKVEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'EVQLVESGGGLVQPGGSLRLSCAASGFTFSRYTMSWVRQAPGKGLEWVAVISGGGHTYYLDSVEGR...FGQGTKVEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNR'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[2NYY_DC_A_WT.json] _____________________
+
+pair = ('2NYY_DC_A_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '2NYY_DC_A_WT', 'sequences': [{'protein': {...EIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRG'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 2NYY_DC_A_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "2NYY_DC_A_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGFTFKYDYMYWVRQAPGKGLEWVATISDGGSYTYYSDSVEGRFTTSRDNSKNTLYLQMNSLRAEDTAIYYCSRYRYDDAMDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDK"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "EIVLTQSPATLSLSPGERATISCRASESVDSYGHSFMQWYQQKPGQAPRLLIYRASNLEPGIPARFSGSGSGTDFTLTISSLEPEDFAVYYCQQGNEVPFTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "2NYY_DC_A_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "VQLQESGGGLVQPGGSLRLSCAASGFTFKYDYMYWVRQAPGKGLEWVATISDGGSYTYYSDSVEGRFTTSRDNSKNTLYLQMNSLRAEDTAIYYCSRYRYDDAMDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEP"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "EIVLTQSPATLSLSPGERATISCRASESVDSYGHSFMQWYQQKPGQAPRLLIYRASNLEPGIPARFSGSGSGTDFTLTISSLEPEDFAVYYCQQGNEVPFTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRG"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...RGEC'}}], ...} == {'dialect': '...FNRG'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLQESGGGLVQPGGSLRLSCAASGFTFKYDYMYWVRQAPGKGLEWVATISDGGSYTYYSDSVEG...GTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'VQLQESGGGLVQPGGSLRLSCAASGFTFKYDYMYWVRQAPGKGLEWVATISDGGSYTYYSDSVEGR...GQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRG'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[3BN9_B_CD_WT.json] _____________________
+
+pair = ('3BN9_B_CD_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '3BN9_B_CD_WT', 'sequences': [{'protein': {...KVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFN'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 3BN9_B_CD_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "3BN9_B_CD_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "VVGGTDADEGEWPWQVSLHALGQGHICGASLISPNWLVSAAHCYIDDRGFRYSDPTQWTAFLGLHDQSQRSAPGVQERRLKRIISHPFFNDFTFDYDIALLELEKPAEYSSMVRPISLPDASHVFPAGKAIWVTGWGHTQYGGTGALILQKGEIRVINQTTCENLLPQQITPRMMCVGFLSGGVDSCQGDSGGPLSSVEADGRIFQAGVVSWGDGCAQRNKPGVYTRLPLFRDWIKENTGV"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DIQMTQSPSSLSASVGDRVTITCRASQGISSYLAWYQQKPGKAPKLLIYAASSLQSGVPSRFSGSGSGTDFTLTISSLQPEDFAVYYCQQHGNLPYTFGDGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "3BN9_B_CD_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLVQSGGGLVKPGGSLRLSCAASGFTFSSYAMSWVRQAPGKGLEWVSAISGSGGSTYYADSVKGRFTISRDNSKNTLYLQMSSLRAEDTAVYYCARPYLTYPQRRGPQNVSPFDNWGQGTMVTVSSASTKGPSVFPLAPLGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPTYICNVNHKPSNTKVDKKVEPK"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DIQMTQSPSSLSASVGDRVTITCRASQGISSYLAWYQQKPGKAPKLLIYAASSLQSGVPSRFSGSGSGTDFTLTISSLQPEDFAVYYCQQHGNLPYTFGDGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFN"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...RGEC'}}], ...} == {'dialect': '...KSFN'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'VVGGTDADEGEWPWQVSLHALGQGHICGASLISPNWLVSAAHCYIDDRGFRYSDPTQWTAFLGLHD...GTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLVQSGGGLVKPGGSLRLSCAASGFTFSSYAMSWVRQAPGKGLEWVSAISGSGGSTYYADSVKG...TFGDGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFN'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[3G6D_LH_A_WT.json] _____________________
+
+pair = ('3G6D_LH_A_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '3G6D_LH_A_WT', 'sequences': [{'protein': {...KLTVLGQPKAAPSVTLFPPSSEELQANKATLVCLISDFYPGAVTVAWKADSSPVKAGVETTTPSKQSNNKYAASSYLSLTPEQWKSHRSYSCQVTHEGSTVEKTVAPT'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 3G6D_LH_A_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "3G6D_LH_A_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLVESGGGLVQPGGSLRLSCAASGFTFNSYWINWVRQAPGKGLEWVSGIAYDSSNTLYADSVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCARGLGAFHWDMQPDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTH"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "SYELTQPPSVSVAPGQTARISCSGDNIGGTFVSWYQQKPGQAPVLVIYDDNDRPSGIPERFSGSNSGNTATLTISGTQAEDEADYYCGTWDMVTNNVFGGGTKLTVLGQPKAAPSVTLFPPSSEELQANKATLVCLISDFYPGAVTVAWKADSSPVKAGVETTTPSKQSNNKYAASSYLSLTPEQWKSHRSYSCQVTHEGSTVEKTVAPTECS"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "3G6D_LH_A_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLVESGGGLVQPGGSLRLSCAASGFTFNSYWINWVRQAPGKGLEWVSGIAYDSSNTLYADSVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCARGLGAFHWDMQPDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "SYELTQPPSVSVAPGQTARISCSGDNIGGTFVSWYQQKPGQAPVLVIYDDNDRPSGIPERFSGSNSGNTATLTISGTQAEDEADYYCGTWDMVTNNVFGGGTKLTVLGQPKAAPSVTLFPPSSEELQANKATLVCLISDFYPGAVTVAWKADSSPVKAGVETTTPSKQSNNKYAASSYLSLTPEQWKSHRSYSCQVTHEGSTVEKTVAPT"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...TECS'}}], ...} == {'dialect': '...VAPT'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLVESGGGLVQPGGSLRLSCAASGFTFNSYWINWVRQAPGKGLEWVSGIAYDSSNTLYADSVKG...GGTKLTVLGQPKAAPSVTLFPPSSEELQANKATLVCLISDFYPGAVTVAWKADSSPVKAGVETTTPSKQSNNKYAASSYLSLTPEQWKSHRSYSCQVTHEGSTVEKTVAPTECS'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLVESGGGLVQPGGSLRLSCAASGFTFNSYWINWVRQAPGKGLEWVSGIAYDSSNTLYADSVKG...VFGGGTKLTVLGQPKAAPSVTLFPPSSEELQANKATLVCLISDFYPGAVTVAWKADSSPVKAGVETTTPSKQSNNKYAASSYLSLTPEQWKSHRSYSCQVTHEGSTVEKTVAPT'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[3L5X_A_HL_WT.json] _____________________
+
+pair = ('3L5X_A_HL_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '3L5X_A_HL_WT', 'sequences': [{'protein': {...KRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 3L5X_A_HL_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "3L5X_A_HL_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVTLKESGPVLVKPTETLTLTCTVSGFSLSTYGMGVGWIRQPPGKALEWLAHIWWDDVKRYNPALKSRLTISKDTSKSQVVLTMTNMDPVDTATYYCARMGSDYDVWFDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSC"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "EIVLTQSPATLSLSPGERATLSCRASKSISKYLAWYQQKPGQAPRLLIYSGSTLQSGIPARFSGSGSGTDFTLTISSLEPEDFAVYYCQQHNEYPYTFGQGTKLEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "3L5X_A_HL_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "VTLKESGPVLVKPTETLTLTCTVSGFSLSTYGMGVGWIRQPPGKALEWLAHIWWDDVKRYNPALKSRLTISKDTSKSQVVLTMTNMDPVDTATYYCARMGSDYDVWFDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSC"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "EIVLTQSPATLSLSPGERATLSCRASKSISKYLAWYQQKPGQAPRLLIYSGSTLQSGIPARFSGSGSGTDFTLTISSLEPEDFAVYYCQQHNEYPYTFGQGTKLEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...RGEC'}}], ...} == {'dialect': '...RGEC'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVTLKESGPVLVKPTETLTLTCTVSGFSLSTYGMGVGWIRQPPGKALEWLAHIWWDDVKRYNPALK...GTKLEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'VTLKESGPVLVKPTETLTLTCTVSGFSLSTYGMGVGWIRQPPGKALEWLAHIWWDDVKRYNPALKS...GTKLEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[3N85_A_LH_WT.json] _____________________
+
+pair = ('3N85_A_LH_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '3N85_A_LH_WT', 'sequences': [{'protein': {...KRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 3N85_A_LH_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "3N85_A_LH_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGFSIWWSWIHWVRQAPGKGLEWVASISPSSGWTSYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARWWSSAMDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTH"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQWWWWPSTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGECEIS"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "3N85_A_LH_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGFSIWWSWIHWVRQAPGKGLEWVASISPSSGWTSYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARWWSSAMDYWGQGTLVTVSSASTKGPSVFPLAPSSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "DIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQWWWWPSTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...CEIS'}}], ...} == {'dialect': '...RGEC'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'EVQLVESGGGLVQPGGSLRLSCAASGFSIWWSWIHWVRQAPGKGLEWVASISPSSGWTSYADSVKG...VEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGECEIS'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'EVQLVESGGGLVQPGGSLRLSCAASGFSIWWSWIHWVRQAPGKGLEWVASISPSSGWTSYADSVKG...GTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[3NGB_HL_G_WT.json] _____________________
+
+pair = ('3NGB_HL_G_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '3NGB_HL_G_WT', 'sequences': [{'protein': {...KRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLRSPVTKSFNRGEC'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 3NGB_HL_G_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "3NGB_HL_G_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLVQSGGQMKKPGESMRISCRASGYEFIDCTLNWIRLAPGKRPEWMGWLKPRGGAVNYARPLQGRVTMTRDVYSDTAFLELRSLTVDDTAVYFCTRGKNCDYNWDFEHWGRGTPVIVSSPSTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKAEPKSC"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "EIVLTQSPGTLSLSPGETAIISCRTSQYGSLAWYQQRPGQAPRLVIYSGSTRAAGIPDRFSGSRWGPDYNLTISNLESGDFGVYYCQQYEFFGQGTKVQVDIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLRSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "3NGB_HL_G_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLVQSGGQMKKPGESMRISCRASGYEFIDCTLNWIRLAPGKRPEWMGWLKPRGGAVNYARPLQGRVTMTRDVYSDTAFLELRSLTVDDTAVYFCTRGKNCDYNWDFEHWGRGTPVIVSSPSTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKAEPKSC"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "VLTQSPGTLSLSPGETAIISCRTSQYGSLAWYQQRPGQAPRLVIYSGSTRAAGIPDRFSGSRWGPDYNLTISNLESGDFGVYYCQQYEFFGQGTKVQVDIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLRSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...RGEC'}}], ...} == {'dialect': '...RGEC'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLVQSGGQMKKPGESMRISCRASGYEFIDCTLNWIRLAPGKRPEWMGWLKPRGGAVNYARPLQG...KVQVDIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLRSPVTKSFNRGEC'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLVQSGGQMKKPGESMRISCRASGYEFIDCTLNWIRLAPGKRPEWMGWLKPRGGAVNYARPLQG...KVQVDIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLRSPVTKSFNRGEC'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[3SE8_HL_G_WT.json] _____________________
+
+pair = ('3SE8_HL_G_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '3SE8_HL_G_WT', 'sequences': [{'protein': {...VHRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 3SE8_HL_G_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "3SE8_HL_G_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLVQSGAVIKTPGSSVKISCRASGYNFRDYSIHWVRLIPDKGFEWIGWIKPLWGAVSYARQLQGRVSMTRQLSQDPDDPDWGVAYMEFSGLTPADTAEYFCVRRGSCDYCGDFPWQYWCQGTVVVVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSC"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "EIVLTQSPGILSLSPGETATLFCKASQGGNAMTWYQKRRGQVPRLLIYDTSRRASGVPDRFVGSGSGTDFFLTINKLDREDFAVYYCQQFEFFGLGSELEVHRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "3SE8_HL_G_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLVQSGAVIKTPGSSVKISCRASGYNFRDYSIHWVRLIPDKGFEWIGWIKPLWGAVSYARQLQGRVSMTRQLSQDPDDPDWGVAYMEFSGLTPADTAEYFCVRRGSCDYCGDFPWQYWCQGTVVVVSSASTKGPSVFPLAPSSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "EIVLTQSPGILSLSPGETATLFCKASQGGNAMTWYQKRRGQVPRLLIYDTSRRASGVPDRFVGSGSGTDFFLTINKLDREDFAVYYCQQFEFFGLGSELEVHRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...RGEC'}}], ...} == {'dialect': '...NRGE'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLVQSGAVIKTPGSSVKISCRASGYNFRDYSIHWVRLIPDKGFEWIGWIKPLWGAVSYARQLQG...GSELEVHRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLVQSGAVIKTPGSSVKISCRASGYNFRDYSIHWVRLIPDKGFEWIGWIKPLWGAVSYARQLQG...LGSELEVHRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[3SE9_HL_G_WT.json] _____________________
+
+pair = ('3SE9_HL_G_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '3SE9_HL_G_WT', 'sequences': [{'protein': {...RRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 3SE9_HL_G_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "3SE9_HL_G_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLVQSGSGVKKPGASVRVSCWTSEDIFERTELIHWVRQAPGQGLEWIGWVKTVTGAVNFGSPDFRQRVSLTRDRDLFTAHMDIRGLTQGDTATYFCARQKFYTGGQGWYFDLWGRGTLIVVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSC"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "EIVLTQSPGTLSLSPGETASLSCTAASYGHMTWYQKKPGQPPKLLIFATSKRASGIPDRFSGSQFGKQYTLTITRMEPEDFARYYCQQLEFFGQGTRLEIRRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "3SE9_HL_G_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QVQLVQSGSGVKKPGASVRVSCWTSEDIFERTELIHWVRQAPGQGLEWIGWVKTVTGAVNFGSPDFRQRVSLTRDRDLFTAHMDIRGLTQGDTATYFCARQKFYTGGQGWYFDLWGRGTLIVVSSASTKGPSVFPLAPSSKSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKS"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "EIVLTQSPGTLSLSPGETASLSCTAASYGHMTWYQKKPGQPPKLLIFATSKRASGIPDRFSGSQFGKQYTLTITRMEPEDFARYYCQQLEFFGQGTRLEIRRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...RGEC'}}], ...} == {'dialect': '...RGEC'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLVQSGSGVKKPGASVRVSCWTSEDIFERTELIHWVRQAPGQGLEWIGWVKTVTGAVNFGSPDF...GTRLEIRRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'QVQLVQSGSGVKKPGASVRVSCWTSEDIFERTELIHWVRQAPGQGLEWIGWVKTVTGAVNFGSPDF...GTRLEIRRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+_____________________ test_jsons_match[5C6T_HL_A_WT.json] _____________________
+
+pair = ('5C6T_HL_A_WT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '5C6T_HL_A_WT', 'sequences': [{'protein': {...': 'LTQPPSASGTPGQRVTISCSGSSSNIETNYVSWYQQFPGTAPKLLIYRNNQRPSGVPDRFSGSKSGTSASLAISGLRSEDEAEYYCGTWDDNSWVFGGGTKLTV'}}], ...})
+
+    def test_jsons_match(pair):
+        fname, expected, output = pair
+>       assert expected == output, (
+            f"\n\nФайл {fname} НЕ совпадает!\n"
+            f"Ожидалось:\n{json.dumps(expected, indent=2, ensure_ascii=False)}\n\n"
+            f"Получено:\n{json.dumps(output, indent=2, ensure_ascii=False)}"
+        )
+E       AssertionError: 
+E         
+E         Файл 5C6T_HL_A_WT.json НЕ совпадает!
+E         Ожидалось:
+E         {
+E           "name": "5C6T_HL_A_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QLQLQESGPGLVKPSETLSLTCTVSGASIDRSTYYWGWIRQPPGKGLEWIANIYYNGRAVYSPSLKSRVTISVDTSKNQFSLKVRSLTAADTAVYYCATRWNYFFDFDYWGRGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKRVEPKSCDKGSENLYFQ"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "QSVLTQPPSASGTPGQRVTISCSGSSSNIETNYVSWYQQFPGTAPKLLIYRNNQRPSGVPDRFSGSKSGTSASLAISGLRSEDEAEYYCGTWDDNSWVFGGGTKLTVLGQPKAAPSVTLFPPSSEELQANKATLVCLISDFYPGAVTVAWKADSSPVKAGVETTTPSKQSNNKYAASSYLSLTPEQWKSHRSYSCQVTHEGSTVEKTVAPTECS"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E         
+E         Получено:
+E         {
+E           "name": "5C6T_HL_A_WT",
+E           "sequences": [
+E             {
+E               "protein": {
+E                 "id": "H",
+E                 "sequence": "QLQLQESGPGLVKPSETLSLTCTVSGASIDRSTYYWGWIRQPPGKGLEWIANIYYNGRAVYSPSLKSRVTISVDTSKNQFSLKVRDTAVYYCATRWNYFFDFDYWGRGTLVTV"
+E               }
+E             },
+E             {
+E               "protein": {
+E                 "id": "L",
+E                 "sequence": "LTQPPSASGTPGQRVTISCSGSSSNIETNYVSWYQQFPGTAPKLLIYRNNQRPSGVPDRFSGSKSGTSASLAISGLRSEDEAEYYCGTWDDNSWVFGGGTKLTV"
+E               }
+E             }
+E           ],
+E           "modelSeeds": [
+E             1
+E           ],
+E           "dialect": "alphafold3",
+E           "version": 1
+E         }
+E       assert {'dialect': '...TECS'}}], ...} == {'dialect': '...KLTV'}}], ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'sequences': [{'protein': {'id': 'H', 'sequence': 'QLQLQESGPGLVKPSETLSLTCTVSGASIDRSTYYWGWIRQPPGKGLEWIANIYYNGRAVYSPSLK...GGTKLTVLGQPKAAPSVTLFPPSSEELQANKATLVCLISDFYPGAVTVAWKADSSPVKAGVETTTPSKQSNNKYAASSYLSLTPEQWKSHRSYSCQVTHEGSTVEKTVAPTECS'}}]} != {'sequences': [{'protein': {'id': 'H', 'sequence': 'QLQLQESGPGLVKPSETLSLTCTVSGASIDRSTYYWGWIRQPPGKGLEWIANIYYNGRAVYSPSLK...quence': 'LTQPPSASGTPGQRVTISCSGSSSNIETNYVSWYQQFPGTAPKLLIYRNNQRPSGVPDRFSGSKSGTSASLAISGLRSEDEAEYYCGTWDDNSWVFGGGTKLTV'}}]}
+E         Use -v to get more diff
+
+test_json.py:42: AssertionError
+=========================== short test summary info ===========================
+FAILED test_json.py::test_jsons_match[1BJ1_HL_VW_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[1CZ8_HL_VW_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[1DVF_AB_CD_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[1JRH_LH_I_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[1YY9_CD_A_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[2B2X_HL_A_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[2NYY_DC_A_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[3BN9_B_CD_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[3G6D_LH_A_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[3L5X_A_HL_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[3N85_A_LH_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[3NGB_HL_G_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[3SE8_HL_G_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[3SE9_HL_G_WT.json] - AssertionError: 
+FAILED test_json.py::test_jsons_match[5C6T_HL_A_WT.json] - AssertionError: 
+================== 15 failed, 18 passed, 1 skipped in 0.14s ===================

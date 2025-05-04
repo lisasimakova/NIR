@@ -1,0 +1,252 @@
+# 3G6D_LH_A_WT_H
+# ANARCI numbered
+# Domain 1 of 1
+# Most significant HMM hit
+#|species|chain_type|e-value|score|seqstart_index|seqend_index|
+#|human|H|6.3e-60|191.9|0|121|
+# Most sequence-identical germlines
+#|species|v_gene|v_identity|j_gene|j_identity|
+#|human|IGHV3-30*01|0.88|IGHJ4*01|0.93|
+# Scheme = chothia
+H 1       Q
+H 2       V
+H 3       Q
+H 4       L
+H 5       V
+H 6       E
+H 7       S
+H 8       G
+H 9       G
+H 10      G
+H 11      L
+H 12      V
+H 13      Q
+H 14      P
+H 15      G
+H 16      G
+H 17      S
+H 18      L
+H 19      R
+H 20      L
+H 21      S
+H 22      C
+H 23      A
+H 24      A
+H 25      S
+H 26      G
+H 27      F
+H 28      T
+H 29      F
+H 30      N
+H 31      S
+H 32      Y
+H 33      W
+H 34      I
+H 35      N
+H 36      W
+H 37      V
+H 38      R
+H 39      Q
+H 40      A
+H 41      P
+H 42      G
+H 43      K
+H 44      G
+H 45      L
+H 46      E
+H 47      W
+H 48      V
+H 49      S
+H 50      G
+H 51      I
+H 52      A
+H 52    A Y
+H 53      D
+H 54      S
+H 55      S
+H 56      N
+H 57      T
+H 58      L
+H 59      Y
+H 60      A
+H 61      D
+H 62      S
+H 63      V
+H 64      K
+H 65      G
+H 66      R
+H 67      F
+H 68      T
+H 69      I
+H 70      S
+H 71      R
+H 72      D
+H 73      N
+H 74      S
+H 75      K
+H 76      N
+H 77      T
+H 78      L
+H 79      Y
+H 80      L
+H 81      Q
+H 82      M
+H 82    A N
+H 82    B S
+H 82    C L
+H 83      R
+H 84      A
+H 85      E
+H 86      D
+H 87      T
+H 88      A
+H 89      V
+H 90      Y
+H 91      Y
+H 92      C
+H 93      A
+H 94      R
+H 95      G
+H 96      L
+H 97      G
+H 98      A
+H 99      F
+H 100     H
+H 100   A W
+H 100   B D
+H 100   C M
+H 100   D Q
+H 100   E P
+H 101     D
+H 102     Y
+H 103     W
+H 104     G
+H 105     Q
+H 106     G
+H 107     T
+H 108     L
+H 109     V
+H 110     T
+H 111     V
+H 112     S
+H 113     S
+//
+# 3G6D_LH_A_WT_L
+# ANARCI numbered
+# Domain 1 of 1
+# Most significant HMM hit
+#|species|chain_type|e-value|score|seqstart_index|seqend_index|
+#|human|L|4.6e-52|166.5|0|106|
+# Most sequence-identical germlines
+#|species|v_gene|v_identity|j_gene|j_identity|
+#|human|IGLV3-21*02|0.82|IGLJ3*02|0.92|
+# Scheme = chothia
+L 1       S
+L 2       Y
+L 3       E
+L 4       L
+L 5       T
+L 6       Q
+L 7       P
+L 8       P
+L 9       S
+L 10      -
+L 11      V
+L 12      S
+L 13      V
+L 14      A
+L 15      P
+L 16      G
+L 17      Q
+L 18      T
+L 19      A
+L 20      R
+L 21      I
+L 22      S
+L 23      C
+L 24      S
+L 25      G
+L 26      D
+L 27      N
+L 28      I
+L 29      G
+L 30      G
+L 31      T
+L 32      F
+L 33      V
+L 34      S
+L 35      W
+L 36      Y
+L 37      Q
+L 38      Q
+L 39      K
+L 40      P
+L 41      G
+L 42      Q
+L 43      A
+L 44      P
+L 45      V
+L 46      L
+L 47      V
+L 48      I
+L 49      Y
+L 50      D
+L 51      D
+L 52      N
+L 53      D
+L 54      R
+L 55      P
+L 56      S
+L 57      G
+L 58      I
+L 59      P
+L 60      E
+L 61      R
+L 62      F
+L 63      S
+L 64      G
+L 65      S
+L 66      N
+L 67      S
+L 68      G
+L 69      N
+L 70      T
+L 71      A
+L 72      T
+L 73      L
+L 74      T
+L 75      I
+L 76      S
+L 77      G
+L 78      T
+L 79      Q
+L 80      A
+L 81      E
+L 82      D
+L 83      E
+L 84      A
+L 85      D
+L 86      Y
+L 87      Y
+L 88      C
+L 89      G
+L 90      T
+L 91      W
+L 92      D
+L 93      M
+L 94      V
+L 95      T
+L 95    A N
+L 96      N
+L 97      V
+L 98      F
+L 99      G
+L 100     G
+L 101     G
+L 102     T
+L 103     K
+L 104     L
+L 105     T
+L 106     V
+L 107     L
+//

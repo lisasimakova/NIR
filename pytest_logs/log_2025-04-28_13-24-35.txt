@@ -1,0 +1,530 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.6, pytest-8.3.5, pluggy-1.5.0
+rootdir: C:\Users\Redmi\Desktop\НИР\Мутации\str_WT
+collected 10 items
+
+test_json_mt_wt.py FFFFFFFFFF                                            [100%]
+
+================================== FAILURES ===================================
+_ test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1BJ1_HL_VW_NH31H_MT.json] _
+
+pair = ('1BJ1_HL_VW_NH31H_MT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1BJ1_HL_VW_WT', 'sequences': [{'pro...IKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE'}}], ...})
+
+    def test_chains_match(pair):
+        fname, expected, output = pair
+        # Сравниваем списки "sequences"
+        if expected.get("sequences") != output.get("sequences"):
+            diff = {
+                "expected": expected.get("sequences"),
+                "output": output.get("sequences")
+            }
+>           pytest.fail(
+                f"\n\nФайл {fname} НЕ совпадает по цепям!\nРазличия:\n{json.dumps(diff, indent=2, ensure_ascii=False)}"
+            )
+E           Failed: 
+E           
+E           Файл 1BJ1_HL_VW_NH31H_MT.json НЕ совпадает по цепям!
+E           Различия:
+E           {
+E             "expected": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGYTFTNYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKRRFTFSLDTSKSTAYLQMNSLRAEDTAVYYCAKYPHYYGSSHWYFDVWGQGTLVTVSSASTKGPSVFPLAPSGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIQMTQSPSSLSASVGDRVTITCSASQDISNYLNWYQQKPGKAPKVLIYFTSSLHSGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQQYSTVPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE"
+E                 }
+E               }
+E             ],
+E             "output": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGYTFTHYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKRRFTFSLDTSKSTAYLQMNSLRAEDTAVYYCAKYPHYYGSSHWYFDVWGQGTLVTVSSASTKGPSVFPLAPSGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIQMTQSPSSLSASVGDRVTITCSASQDISNYLNWYQQKPGKAPKVLIYFTSSLHSGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQQYSTVPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE"
+E                 }
+E               }
+E             ]
+E           }
+
+test_json_mt_wt.py:78: Failed
+_ test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1MHP_HL_A_HL30K_MT.json] _
+
+pair = ('1MHP_HL_A_HL30K_MT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1MHP_HL_A_SH52M_WT', 'sequences': [{...KRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}], ...})
+
+    def test_chains_match(pair):
+        fname, expected, output = pair
+        # Сравниваем списки "sequences"
+        if expected.get("sequences") != output.get("sequences"):
+            diff = {
+                "expected": expected.get("sequences"),
+                "output": output.get("sequences")
+            }
+>           pytest.fail(
+                f"\n\nФайл {fname} НЕ совпадает по цепям!\nРазличия:\n{json.dumps(diff, indent=2, ensure_ascii=False)}"
+            )
+E           Failed: 
+E           
+E           Файл 1MHP_HL_A_HL30K_MT.json НЕ совпадает по цепям!
+E           Различия:
+E           {
+E             "expected": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGFTFSRYTMSWVRQAPGKGLEWVATISGGGHTYYLDSVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCTRGFGDGGYFDVWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "IQLTQSPSSLSASVGDRVTITCSASSSVNHMFWYQQKPGKAPKPWIYLTSNLASGVPSRFSGSGSGTDYTLTISSLQPEDFATYYCQQWSGNPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E                 }
+E               }
+E             ],
+E             "output": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGFTFSRYTMSWVRQAPGKGLEWVATISGGGHTYYLDSVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCTRGFGDGGYFDVWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "IQLTQSPSSLSASVGDRVTITCSASSSVNKMFWYQQKPGKAPKPWIYLTSNLASGVPSRFSGSGSGTDYTLTISSLQPEDFATYYCQQWSGNPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E                 }
+E               }
+E             ]
+E           }
+
+test_json_mt_wt.py:78: Failed
+_ test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1MHP_HL_A_HL30R_MT.json] _
+
+pair = ('1MHP_HL_A_HL30R_MT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1MHP_HL_A_SH52M_WT', 'sequences': [{...KRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}], ...})
+
+    def test_chains_match(pair):
+        fname, expected, output = pair
+        # Сравниваем списки "sequences"
+        if expected.get("sequences") != output.get("sequences"):
+            diff = {
+                "expected": expected.get("sequences"),
+                "output": output.get("sequences")
+            }
+>           pytest.fail(
+                f"\n\nФайл {fname} НЕ совпадает по цепям!\nРазличия:\n{json.dumps(diff, indent=2, ensure_ascii=False)}"
+            )
+E           Failed: 
+E           
+E           Файл 1MHP_HL_A_HL30R_MT.json НЕ совпадает по цепям!
+E           Различия:
+E           {
+E             "expected": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGFTFSRYTMSWVRQAPGKGLEWVATISGGGHTYYLDSVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCTRGFGDGGYFDVWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "IQLTQSPSSLSASVGDRVTITCSASSSVNHMFWYQQKPGKAPKPWIYLTSNLASGVPSRFSGSGSGTDYTLTISSLQPEDFATYYCQQWSGNPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E                 }
+E               }
+E             ],
+E             "output": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGFTFSRYTMSWVRQAPGKGLEWVATISGGGHTYYLDSVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCTRGFGDGGYFDVWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "IQLTQSPSSLSASVGDRVTITCSASSSVNRMFWYQQKPGKAPKPWIYLTSNLASGVPSRFSGSGSGTDYTLTISSLQPEDFATYYCQQWSGNPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E                 }
+E               }
+E             ]
+E           }
+
+test_json_mt_wt.py:78: Failed
+_ test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1MHP_HL_A_LL48K_MT.json] _
+
+pair = ('1MHP_HL_A_LL48K_MT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1MHP_HL_A_SH52M_WT', 'sequences': [{...KRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}], ...})
+
+    def test_chains_match(pair):
+        fname, expected, output = pair
+        # Сравниваем списки "sequences"
+        if expected.get("sequences") != output.get("sequences"):
+            diff = {
+                "expected": expected.get("sequences"),
+                "output": output.get("sequences")
+            }
+>           pytest.fail(
+                f"\n\nФайл {fname} НЕ совпадает по цепям!\nРазличия:\n{json.dumps(diff, indent=2, ensure_ascii=False)}"
+            )
+E           Failed: 
+E           
+E           Файл 1MHP_HL_A_LL48K_MT.json НЕ совпадает по цепям!
+E           Различия:
+E           {
+E             "expected": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGFTFSRYTMSWVRQAPGKGLEWVATISGGGHTYYLDSVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCTRGFGDGGYFDVWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "IQLTQSPSSLSASVGDRVTITCSASSSVNHMFWYQQKPGKAPKPWIYLTSNLASGVPSRFSGSGSGTDYTLTISSLQPEDFATYYCQQWSGNPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E                 }
+E               }
+E             ],
+E             "output": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGFTFSRYTMSWVRQAPGKGLEWVATISGGGHTYYLDSVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCTRGFGDGGYFDVWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "IQLTQSPSSLSASVGDRVTITCSASSSVNHMFWYQQKPGKAPKPWIYKTSNLASGVPSRFSGSGSGTDYTLTISSLQPEDFATYYCQQWSGNPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E                 }
+E               }
+E             ]
+E           }
+
+test_json_mt_wt.py:78: Failed
+_ test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1MHP_HL_A_SL91R_MT.json] _
+
+pair = ('1MHP_HL_A_SL91R_MT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1MHP_HL_A_SH52M_WT', 'sequences': [{...KRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC'}}], ...})
+
+    def test_chains_match(pair):
+        fname, expected, output = pair
+        # Сравниваем списки "sequences"
+        if expected.get("sequences") != output.get("sequences"):
+            diff = {
+                "expected": expected.get("sequences"),
+                "output": output.get("sequences")
+            }
+>           pytest.fail(
+                f"\n\nФайл {fname} НЕ совпадает по цепям!\nРазличия:\n{json.dumps(diff, indent=2, ensure_ascii=False)}"
+            )
+E           Failed: 
+E           
+E           Файл 1MHP_HL_A_SL91R_MT.json НЕ совпадает по цепям!
+E           Различия:
+E           {
+E             "expected": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGFTFSRYTMSWVRQAPGKGLEWVATISGGGHTYYLDSVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCTRGFGDGGYFDVWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "IQLTQSPSSLSASVGDRVTITCSASSSVNHMFWYQQKPGKAPKPWIYLTSNLASGVPSRFSGSGSGTDYTLTISSLQPEDFATYYCQQWSGNPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E                 }
+E               }
+E             ],
+E             "output": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLQESGPSLVKPSQTLSLTCSVTGDSVTSDYWSWIRKFPGNKLEYMGAISYSGSTYYHPSLKSRISITRDTSKNQYYLQLNSVTTEDTATYYCASWGGDVWGAGTTVTVSSAKTTAPSVYPLAPVCGDTTGSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDLYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKI"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "IQLTQSPSSLSASVGDRVTITCSASSSVNHMFWYQQKPGKAPKPWIYLTSNLASGVPSRFSGSGSGTDYTLTISSLQPEDFATYYCQQWRGNPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC"
+E                 }
+E               }
+E             ]
+E           }
+
+test_json_mt_wt.py:78: Failed
+_ test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1VFB_AB_C_TA53R_MT.json] _
+
+pair = ('1VFB_AB_C_TA53R_MT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1VFB_AB_C_YA32W_WT', 'sequences': [{...'DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTRTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK'}}], ...})
+
+    def test_chains_match(pair):
+        fname, expected, output = pair
+        # Сравниваем списки "sequences"
+        if expected.get("sequences") != output.get("sequences"):
+            diff = {
+                "expected": expected.get("sequences"),
+                "output": output.get("sequences")
+            }
+>           pytest.fail(
+                f"\n\nФайл {fname} НЕ совпадает по цепям!\nРазличия:\n{json.dumps(diff, indent=2, ensure_ascii=False)}"
+            )
+E           Failed: 
+E           
+E           Файл 1VFB_AB_C_TA53R_MT.json НЕ совпадает по цепям!
+E           Различия:
+E           {
+E             "expected": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "QVQLQESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSRLSISKDNSKSQVFLKMNSLHTDDTARYYCARERDYRLDYWGQGTTLTVSS"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK"
+E                 }
+E               }
+E             ],
+E             "output": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "QVQLQESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSRLSISKDNSKSQVFLKMNSLHTDDTARYYCARERDYRLDYWGQGTTLTVSS"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTRTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK"
+E                 }
+E               }
+E             ]
+E           }
+
+test_json_mt_wt.py:78: Failed
+_ test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1VFB_AB_C_YA50K_MT.json] _
+
+pair = ('1VFB_AB_C_YA50K_MT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '1VFB_AB_C_YA32W_WT', 'sequences': [{...'DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYKTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK'}}], ...})
+
+    def test_chains_match(pair):
+        fname, expected, output = pair
+        # Сравниваем списки "sequences"
+        if expected.get("sequences") != output.get("sequences"):
+            diff = {
+                "expected": expected.get("sequences"),
+                "output": output.get("sequences")
+            }
+>           pytest.fail(
+                f"\n\nФайл {fname} НЕ совпадает по цепям!\nРазличия:\n{json.dumps(diff, indent=2, ensure_ascii=False)}"
+            )
+E           Failed: 
+E           
+E           Файл 1VFB_AB_C_YA50K_MT.json НЕ совпадает по цепям!
+E           Различия:
+E           {
+E             "expected": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "QVQLQESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSRLSISKDNSKSQVFLKMNSLHTDDTARYYCARERDYRLDYWGQGTTLTVSS"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK"
+E                 }
+E               }
+E             ],
+E             "output": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "QVQLQESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSRLSISKDNSKSQVFLKMNSLHTDDTARYYCARERDYRLDYWGQGTTLTVSS"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYKTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK"
+E                 }
+E               }
+E             ]
+E           }
+
+test_json_mt_wt.py:78: Failed
+_ test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\2BDN_HL_A_NL31K_MT.json] _
+
+pair = ('2BDN_HL_A_NL31K_MT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '2BDN_HL_A_NL31K_WT', 'sequences': [{...KRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC'}}], ...})
+
+    def test_chains_match(pair):
+        fname, expected, output = pair
+        # Сравниваем списки "sequences"
+        if expected.get("sequences") != output.get("sequences"):
+            diff = {
+                "expected": expected.get("sequences"),
+                "output": output.get("sequences")
+            }
+>           pytest.fail(
+                f"\n\nФайл {fname} НЕ совпадает по цепям!\nРазличия:\n{json.dumps(diff, indent=2, ensure_ascii=False)}"
+            )
+E           Failed: 
+E           
+E           Файл 2BDN_HL_A_NL31K_MT.json НЕ совпадает по цепям!
+E           Различия:
+E           {
+E             "expected": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLQQSGAELVKAGASVKLSCPASGLNIKDTYMHWVKQRPEQGLEWIGRIDPANGNTKFDPKFQGKATITADTSSNTAYLQLSSLTSEDTAVYYCARGVFGFFDYWGQGTTLTVSSAKTTAPSVYPLAPVCGDTTGSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDLYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIVPR"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIQMTQSSSSFSVSLGDRVTITCKATEDIYNRLAWYQQKPGSAPRLLISGATSLETGVPSRFSGSGSGKDYTLSITSLQTEDVATYYCQQFWSAPYTFGGGTKLEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC"
+E                 }
+E               }
+E             ],
+E             "output": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLQQSGAELVKAGASVKLSCPASGLNIKDTYMHWVKQRPEQGLEWIGRIDPANGNTKFDPKFQGKATITADTSSNTAYLQLSSLTSEDTAVYYCARGVFGFFDYWGQGTTLTVSSAKTTAPSVYPLAPVCGDTTGSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDLYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIVPR"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIQMTQSSSSFSVSLGDRVTITCKATEDIYKRLAWYQQKPGSAPRLLISGATSLETGVPSRFSGSGSGKDYTLSITSLQTEDVATYYCQQFWSAPYTFGGGTKLEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC"
+E                 }
+E               }
+E             ]
+E           }
+
+test_json_mt_wt.py:78: Failed
+_ test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\2BDN_HL_A_NL31R_MT.json] _
+
+pair = ('2BDN_HL_A_NL31R_MT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '2BDN_HL_A_NL31K_WT', 'sequences': [{...KRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC'}}], ...})
+
+    def test_chains_match(pair):
+        fname, expected, output = pair
+        # Сравниваем списки "sequences"
+        if expected.get("sequences") != output.get("sequences"):
+            diff = {
+                "expected": expected.get("sequences"),
+                "output": output.get("sequences")
+            }
+>           pytest.fail(
+                f"\n\nФайл {fname} НЕ совпадает по цепям!\nРазличия:\n{json.dumps(diff, indent=2, ensure_ascii=False)}"
+            )
+E           Failed: 
+E           
+E           Файл 2BDN_HL_A_NL31R_MT.json НЕ совпадает по цепям!
+E           Различия:
+E           {
+E             "expected": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLQQSGAELVKAGASVKLSCPASGLNIKDTYMHWVKQRPEQGLEWIGRIDPANGNTKFDPKFQGKATITADTSSNTAYLQLSSLTSEDTAVYYCARGVFGFFDYWGQGTTLTVSSAKTTAPSVYPLAPVCGDTTGSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDLYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIVPR"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIQMTQSSSSFSVSLGDRVTITCKATEDIYNRLAWYQQKPGSAPRLLISGATSLETGVPSRFSGSGSGKDYTLSITSLQTEDVATYYCQQFWSAPYTFGGGTKLEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC"
+E                 }
+E               }
+E             ],
+E             "output": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "EVQLQQSGAELVKAGASVKLSCPASGLNIKDTYMHWVKQRPEQGLEWIGRIDPANGNTKFDPKFQGKATITADTSSNTAYLQLSSLTSEDTAVYYCARGVFGFFDYWGQGTTLTVSSAKTTAPSVYPLAPVCGDTTGSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDLYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIVPR"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIQMTQSSSSFSVSLGDRVTITCKATEDIYRRLAWYQQKPGSAPRLLISGATSLETGVPSRFSGSGSGKDYTLSITSLQTEDVATYYCQQFWSAPYTFGGGTKLEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC"
+E                 }
+E               }
+E             ]
+E           }
+
+test_json_mt_wt.py:78: Failed
+_ test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\3BN9_B_CD_PD104H_MT.json] _
+
+pair = ('3BN9_B_CD_PD104H_MT.json', {'dialect': 'alphafold3', 'modelSeeds': [1], 'name': '3BN9_B_CD_WT', 'sequences': [{'prot...KVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFN'}}], ...})
+
+    def test_chains_match(pair):
+        fname, expected, output = pair
+        # Сравниваем списки "sequences"
+        if expected.get("sequences") != output.get("sequences"):
+            diff = {
+                "expected": expected.get("sequences"),
+                "output": output.get("sequences")
+            }
+>           pytest.fail(
+                f"\n\nФайл {fname} НЕ совпадает по цепям!\nРазличия:\n{json.dumps(diff, indent=2, ensure_ascii=False)}"
+            )
+E           Failed: 
+E           
+E           Файл 3BN9_B_CD_PD104H_MT.json НЕ совпадает по цепям!
+E           Различия:
+E           {
+E             "expected": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "QVQLVQSGGGLVKPGGSLRLSCAASGFTFSSYAMSWVRQAPGKGLEWVSAISGSGGSTYYADSVKGRFTISRDNSKNTLYLQMSSLRAEDTAVYYCARPYLTYPQRRGPQNVSPFDNWGQGTMVTVSSASTKGPSVFPLAPLGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPTYICNVNHKPSNTKVDKKVEPK"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIQMTQSPSSLSASVGDRVTITCRASQGISSYLAWYQQKPGKAPKLLIYAASSLQSGVPSRFSGSGSGTDFTLTISSLQPEDFAVYYCQQHGNLPYTFGDGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFN"
+E                 }
+E               }
+E             ],
+E             "output": [
+E               {
+E                 "protein": {
+E                   "id": "H",
+E                   "sequence": "QVQLVQSGGGLVKPGGSLRLSCAASGFTFSSYAMSWVRQAPGKGLEWVSAISGSGGSTYYADSVKGRFTISRDNSKNTLYLQMSSLRAEDTAVYYCARPYLTYHQRRGPQNVSPFDNWGQGTMVTVSSASTKGPSVFPLAPLGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPTYICNVNHKPSNTKVDKKVEPK"
+E                 }
+E               },
+E               {
+E                 "protein": {
+E                   "id": "L",
+E                   "sequence": "DIQMTQSPSSLSASVGDRVTITCRASQGISSYLAWYQQKPGKAPKLLIYAASSLQSGVPSRFSGSGSGTDFTLTISSLQPEDFAVYYCQQHGNLPYTFGDGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFN"
+E                 }
+E               }
+E             ]
+E           }
+
+test_json_mt_wt.py:78: Failed
+=========================== short test summary info ===========================
+FAILED test_json_mt_wt.py::test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1BJ1_HL_VW_NH31H_MT.json]
+FAILED test_json_mt_wt.py::test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1MHP_HL_A_HL30K_MT.json]
+FAILED test_json_mt_wt.py::test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1MHP_HL_A_HL30R_MT.json]
+FAILED test_json_mt_wt.py::test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1MHP_HL_A_LL48K_MT.json]
+FAILED test_json_mt_wt.py::test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1MHP_HL_A_SL91R_MT.json]
+FAILED test_json_mt_wt.py::test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1VFB_AB_C_TA53R_MT.json]
+FAILED test_json_mt_wt.py::test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\1VFB_AB_C_YA50K_MT.json]
+FAILED test_json_mt_wt.py::test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\2BDN_HL_A_NL31K_MT.json]
+FAILED test_json_mt_wt.py::test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\2BDN_HL_A_NL31R_MT.json]
+FAILED test_json_mt_wt.py::test_chains_match[C:\\Users\\Redmi\\Desktop\\\u041d\u0418\u0420\\\u041c\u0443\u0442\u0430\u0446\u0438\u0438\\\u0442\u0438\u043f\u044b_\u0430\u043c\u0438\u043d\u043e\u043a\u0438\u0441\u043b\u043e\u0442\\\u041f\u043e\u043b\u043e\u0436\u0438\u0442\u0435\u043b\u044c\u043d\u043e_\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0435\\\u0433\u043e\u0442\u043e\u0432\u044b\u0435\\\u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430\\3BN9_B_CD_PD104H_MT.json]
+============================= 10 failed in 0.11s ==============================

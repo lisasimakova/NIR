@@ -1,0 +1,22 @@
+{
+  "name": "1KIP_AB_C_WT",
+  "sequences": [
+    {
+      "protein": {
+        "id": "H",
+        "sequence": "QVQLQESGPGLVAPSQSLSITCTVSGFSLTGAGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSRLSISKDNSKSQVFLKMNSLHTDDTARYYCARERDYRLDYWGQGTTLTVSS"
+      }
+    },
+    {
+      "protein": {
+        "id": "L",
+        "sequence": "DIVLTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK"
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}

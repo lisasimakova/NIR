@@ -1,0 +1,10 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.6, pytest-8.3.5, pluggy-1.5.0
+rootdir: C:\Users\Redmi\Desktop\ÍÈĞ\Ìóòàöèè\str_WT
+collected 183 items
+
+test_json_mt_wt.py sssssssssssssssssssssssssssssssssssssssssssssssssssss [ 28%]
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss [ 68%]
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssss               [100%]
+
+============================ 183 skipped in 0.19s =============================

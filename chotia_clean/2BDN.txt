@@ -1,0 +1,246 @@
+# 2BDN_HL_A_WT_H
+# ANARCI numbered
+# Domain 1 of 1
+# Most significant HMM hit
+#|species|chain_type|e-value|score|seqstart_index|seqend_index|
+#|mouse|H|1.9e-55|177.3|0|116|
+# Most sequence-identical germlines
+#|species|v_gene|v_identity|j_gene|j_identity|
+#|mouse|IGHV14-3*02|0.96|IGHJ2*01|1.00|
+# Scheme = chothia
+H 1       E
+H 2       V
+H 3       Q
+H 4       L
+H 5       Q
+H 6       Q
+H 7       S
+H 8       G
+H 9       A
+H 10      E
+H 11      L
+H 12      V
+H 13      K
+H 14      A
+H 15      G
+H 16      A
+H 17      S
+H 18      V
+H 19      K
+H 20      L
+H 21      S
+H 22      C
+H 23      P
+H 24      A
+H 25      S
+H 26      G
+H 27      L
+H 28      N
+H 29      I
+H 30      K
+H 31      D
+H 32      T
+H 33      Y
+H 34      M
+H 35      H
+H 36      W
+H 37      V
+H 38      K
+H 39      Q
+H 40      R
+H 41      P
+H 42      E
+H 43      Q
+H 44      G
+H 45      L
+H 46      E
+H 47      W
+H 48      I
+H 49      G
+H 50      R
+H 51      I
+H 52      D
+H 52    A P
+H 53      A
+H 54      N
+H 55      G
+H 56      N
+H 57      T
+H 58      K
+H 59      F
+H 60      D
+H 61      P
+H 62      K
+H 63      F
+H 64      Q
+H 65      G
+H 66      K
+H 67      A
+H 68      T
+H 69      I
+H 70      T
+H 71      A
+H 72      D
+H 73      T
+H 74      S
+H 75      S
+H 76      N
+H 77      T
+H 78      A
+H 79      Y
+H 80      L
+H 81      Q
+H 82      L
+H 82    A S
+H 82    B S
+H 82    C L
+H 83      T
+H 84      S
+H 85      E
+H 86      D
+H 87      T
+H 88      A
+H 89      V
+H 90      Y
+H 91      Y
+H 92      C
+H 93      A
+H 94      R
+H 95      G
+H 96      V
+H 97      F
+H 98      G
+H 99      F
+H 100     F
+H 101     D
+H 102     Y
+H 103     W
+H 104     G
+H 105     Q
+H 106     G
+H 107     T
+H 108     T
+H 109     L
+H 110     T
+H 111     V
+H 112     S
+H 113     S
+//
+# 2BDN_HL_A_WT_L
+# ANARCI numbered
+# Domain 1 of 1
+# Most significant HMM hit
+#|species|chain_type|e-value|score|seqstart_index|seqend_index|
+#|mouse|K|3.9e-51|163.3|0|106|
+# Most sequence-identical germlines
+#|species|v_gene|v_identity|j_gene|j_identity|
+#|mouse|IGKV13-84*01|0.97|IGKJ2*01|1.00|
+# Scheme = chothia
+L 1       D
+L 2       I
+L 3       Q
+L 4       M
+L 5       T
+L 6       Q
+L 7       S
+L 8       S
+L 9       S
+L 10      S
+L 11      F
+L 12      S
+L 13      V
+L 14      S
+L 15      L
+L 16      G
+L 17      D
+L 18      R
+L 19      V
+L 20      T
+L 21      I
+L 22      T
+L 23      C
+L 24      K
+L 25      A
+L 26      T
+L 27      E
+L 28      D
+L 29      I
+L 30      Y
+L 31      N
+L 32      R
+L 33      L
+L 34      A
+L 35      W
+L 36      Y
+L 37      Q
+L 38      Q
+L 39      K
+L 40      P
+L 41      G
+L 42      S
+L 43      A
+L 44      P
+L 45      R
+L 46      L
+L 47      L
+L 48      I
+L 49      S
+L 50      G
+L 51      A
+L 52      T
+L 53      S
+L 54      L
+L 55      E
+L 56      T
+L 57      G
+L 58      V
+L 59      P
+L 60      S
+L 61      R
+L 62      F
+L 63      S
+L 64      G
+L 65      S
+L 66      G
+L 67      S
+L 68      G
+L 69      K
+L 70      D
+L 71      Y
+L 72      T
+L 73      L
+L 74      S
+L 75      I
+L 76      T
+L 77      S
+L 78      L
+L 79      Q
+L 80      T
+L 81      E
+L 82      D
+L 83      V
+L 84      A
+L 85      T
+L 86      Y
+L 87      Y
+L 88      C
+L 89      Q
+L 90      Q
+L 91      F
+L 92      W
+L 93      S
+L 94      A
+L 95      P
+L 96      Y
+L 97      T
+L 98      F
+L 99      G
+L 100     G
+L 101     G
+L 102     T
+L 103     K
+L 104     L
+L 105     E
+L 106     I
+L 107     K
+//

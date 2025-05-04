@@ -1,0 +1,22 @@
+{
+  "name": "1NMB_N_LH_WT",
+  "sequences": [
+    {
+      "protein": {
+        "id": "H",
+        "sequence": "QVQLQQPGAELVKPGASVRMSCKASGYTFTNYNMYWVKQSPGQGLEWIGIFYPGNGDTSYNQKFKDKATLTADKSSNTAYMQLSSLTSEDSAVYYCARSGGSYRYDGGFDYWGQGTTLTVSS"
+      }
+    },
+    {
+      "protein": {
+        "id": "L",
+        "sequence": "DIQMTQTTSSLSASLGDRVTISCRASQDISNYLNWYQQNPDGTVKLLIYYTSNLHSEVPSRFSGSGSGTDYSLTISNLEQEDIATYFCQQDFTLPFTFGGGTKLEIRRA"
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}

@@ -1,0 +1,22 @@
+{
+  "name": "5C6T_HL_A_WT",
+  "sequences": [
+    {
+      "protein": {
+        "id": "H",
+        "sequence": "QLQLQESGPGLVKPSETLSLTCTVSGASIDRSTYYWGWIRQPPGKGLEWIANIYYNGRAVYSPSLKSRVTISVDTSKNQFSLKVRDTAVYYCATRWNYFFDFDYWGRGTLVTV"
+      }
+    },
+    {
+      "protein": {
+        "id": "L",
+        "sequence": "LTQPPSASGTPGQRVTISCSGSSSNIETNYVSWYQQFPGTAPKLLIYRNNQRPSGVPDRFSGSKSGTSASLAISGLRSEDEAEYYCGTWDDNSWVFGGGTKLTV"
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}
